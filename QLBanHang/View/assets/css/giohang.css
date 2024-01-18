@@ -1,0 +1,242 @@
+#section_content_GH {
+  padding: 20px 120px;
+  margin-top: 130px;
+  position: relative;
+}
+#section_content_GH .content1 p {
+  font-size: 2rem;
+  position: relative;
+}
+#section_content_GH .content1 p i {
+  color: red;
+  margin-right: 10px;
+}
+#section_content_GH .content1 p:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+#section_content_GH .content2 {
+  margin-top: 40px;
+  padding: 10px 50px;
+}
+#section_content_GH .content2 ul {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+#section_content_GH .content2 ul li:first-child {
+  flex: 3;
+}
+#section_content_GH .content2 ul li + li {
+  flex: 1;
+}
+#section_content_GH .content2 ul .img {
+  width: 100px;
+  height: 100px;
+  margin:0 8px;
+}
+#section_content_GH .content2 ul .img img{
+    width: 100%;
+    height:100%
+    object-fit: contain;
+}
+#section_content_GH .content2 ul+ul{
+    margin-top:15px
+}
+#section_content_GH .content2 ul+ul li:first-child{
+    display:flex;
+    font-size: 1.6rem;
+    
+}
+#section_content_GH .content2 ul+ul li:first-child .img{
+    cursor: pointer;
+}
+#section_content_GH .content2 ul+ul li:first-child p{
+    width:180px;
+}
+#section_content_GH .content2 ul+ul li:first-child p+p{
+    margin-top:15px;
+    font-size: 1.2rem;
+
+}
+#section_content_GH .content2 ul+ul li:first-child p+p i{
+    color:red;
+    margin-right:10px;
+}
+#section_content_GH .content2 ul .delete i{
+    color:red;
+    margin-left:10px;
+    cursor:pointer;
+}
+#section_content_GH .payment {
+  display:flex;
+    width: 78%;
+    padding:40px 20px;
+    position: fixed; /* Thêm thuộc tính này */
+    bottom: 10px; /* Thêm thuộc tính này */
+    left: 170px;
+    background-color: #1da1f2;
+    font-size: 1.8rem;
+    color:yellow;
+}
+#section_content_GH .payment input{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+
+}
+#section_content_GH .payment .delete{
+    margin:0 10px;
+    cursor: pointer;
+}
+#section_content_GH .payment button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background-color: #ee4d2d;
+    margin-left:100px;
+}
+#section_content_GH .payment button:hover{
+    cursor:pointer;
+}
+#section_content_GH .payment span>span{
+    color:red;
+    margin-left:10px
+}
+#container{
+  position: relative;
+}
+#container .hoadon {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  position:fixed;
+  padding:100px 400px;
+
+  top:0;
+  left:0;
+  opacity: 0.7;
+  z-index:100000;
+  animation: fadeInDown 0.3s ease-in-out forwards;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#container .hoadon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eeeeee;
+  opacity: 0.8;
+  z-index: -1;
+}
+#container .hoadon.hide{
+  display: none;
+}
+#container .hoadon .hd_content {
+  background-color: white;
+  border-radius: 10px;
+  padding:15px 20px;
+  position: relative;
+}
+
+#container .hoadon .hd_content p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#container .hoadon .hd_content ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+#container .hoadon .hd_content li {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#container .hoadon .hd_content ul .sdt div{
+  
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+#container .hoadon .hd_content ul .sdt>input{
+  margin-left: 25px;
+}
+#container .hoadon .hd_content ul .address span{
+  margin-bottom: 10px;
+  display: inline-block;
+}
+#container .hoadon .hd_content li span {
+  font-weight: bold;
+}
+#container .hoadon .hd_content ul .address .select{
+  margin-bottom:10px;
+}
+#container .hoadon .hd_content .table {
+
+  max-height: 100px; 
+  overflow-y: auto; 
+}
+#container .hoadon .hd_content table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+#container .hoadon .hd_content table, th, td {
+  border: 1px solid #ddd;
+}
+
+#container .hoadon .hd_content th, td {
+  padding: 10px;
+  text-align: left;
+}
+#container .hoadon .hd_content .submit_TT{
+  text-align: center;
+}
+#container .hoadon .hd_content button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+#container .hoadon .hd_content .icon_closeHd{
+  position:absolute;
+  top: 10px;
+  right: 20px;
+}
+#container .hoadon .hd_content .icon_closeHd i{
+  font-size:2rem;
+  cursor: pointer;
+
+}
+#container .hoadon .hd_content .icon_closeHd i:hover{
+  color:red;
+}
+#container .hoadon .hd_content button:hover {
+  background-color: #0d91e0;
+}

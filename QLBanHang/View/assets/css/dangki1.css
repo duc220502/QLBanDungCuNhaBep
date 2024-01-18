@@ -1,0 +1,115 @@
+#sign_Up {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  opacity: 0; /* Đặt opacity ban đầu là 0 */
+  animation: fadeInDown 0.3s ease-in-out forwards;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-80px); /* Di chuyển lên trên một chút */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Di chuyển xuống dưới */
+  }
+}
+#sign_Up::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eeeeee;
+  opacity: 0.8;
+  z-index: -1;
+}
+#sign_Up .sign_Up-bg {
+  display: inline-block;
+  position: relative;
+  width: 1000px;
+  height: 515px;
+  background-image: url(./../img/fetured_1.png);
+}
+#sign_Up .sign_Up_content {
+  width: 420px;
+  height: 100%;
+  text-align: center;
+}
+#sign_Up .sign_Up_content .img {
+  text-align: center;
+}
+#sign_Up .sign_Up_content .img i {
+  margin: 15px 0 5px 0;
+  font-size: 3.5rem;
+  display: inline-block;
+}
+#sign_Up .sign_Up_content > p {
+  margin-top: 15px;
+  color: #000000;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+#sign_Up .sign_Up_content .form {
+  margin-top: 30px;
+}
+#sign_Up .sign_Up_content .form li {
+  text-align: center;
+}
+#sign_Up .sign_Up_content .form li + li {
+  margin-top: 10px;
+}
+#sign_Up .sign_Up_content .form li input {
+  padding-left: 10px;
+  font-size: 1.8rem;
+  width: 70%;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  border: 0.5px solid #ccc;
+}
+#sign_Up .sign_Up_content .form li input::placeholder {
+  font-size: 1.6rem;
+  padding: 10px;
+}
+#sign_Up .sign_Up_content > span {
+  display: inline-block;
+  font-size: 1.6.rem;
+  margin-top: 10px;
+}
+#sign_Up .sign_Up_content > span .btn_login {
+  font-size: 1.7rem;
+  color: #3c94ec;
+  cursor: pointer;
+}
+#sign_Up .sign_Up_content .form li button {
+  background-color: #344563;
+  padding: 5px 20px;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#sign_Up .sign_Up-bg .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+#sign_Up .sign_Up_content .close i {
+  font-size: 2.6rem;
+  opacity: 0.7;
+}
+#sign_Up .sign_Up_content .close i:hover {
+  color: red;
+}

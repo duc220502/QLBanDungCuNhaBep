@@ -1,0 +1,200 @@
+#login {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  opacity: 0.7;
+  animation: fadeInDown 0.3s ease-in-out forwards;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eeeeee;
+  opacity: 0.8;
+  z-index: -1;
+}
+#login .login-bg {
+  position: relative;
+  display: inline-block;
+  width: 1000px;
+  height: 515px;
+  background-image: url(./../img/login.png);
+}
+#login .login_content {
+  width: 420px;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+#login .login_content .img {
+  text-align: center;
+}
+#login .login_content .img i {
+  margin: 15px 0 5px 0;
+  font-size: 3.5rem;
+  display: inline-block;
+}
+#login .login_content > p {
+  margin-top: 15px;
+  color: #000000;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+#login .login_content .form {
+  margin-top: 30px;
+}
+#login .login_content .form li {
+  text-align: center;
+}
+#login .login_content .form li + li {
+  margin-top: 15px;
+}
+#login .login_content .form .form_field {
+  position: relative;
+}
+#login .login_content .form .form_lable {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 76px;
+  font-size: 1.5rem;
+  user-select: none;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+#login .login_content .form li input {
+  padding-left: 10px;
+  font-size: 1.6rem;
+  width: 70%;
+  height: 45px;
+  border-radius: 10px;
+  outline: none;
+  border: 0.5px solid #ccc;
+}
+#login .login_content .form li input:focus {
+  border-color: #6a5af9;
+}
+#login .login_content .form li input:not(:placeholder-shown) + .form_lable,
+#login .login_content .form li input:focus + .form_lable {
+  top: 0;
+  padding: 0 2px;
+  font-size: 1.3rem;
+  color: #6a5af9;
+  background-color: #ffffff;
+}
+#login .login_content .form li input::placeholder {
+  font-size: 1.6rem;
+  padding: 10px;
+}
+#login .login_content .form .showStatus {
+  width: 70%;
+  margin-top: 2px;
+  text-align: left;
+  padding-left: 80px;
+}
+#login .login_content > span {
+  display: inline-block;
+  font-size: 1.6.rem;
+  margin-top: 12px;
+}
+#login .login_content > span > .signup-button {
+  font-size: 1.7rem;
+  color: #3c94ec;
+  cursor: pointer;
+}
+#login .login_content form div button {
+  background-color: #344563;
+  padding: 5px 20px;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#login .login_content .bd {
+  margin-top: 20px;
+  position: relative;
+}
+#login .login_content .bd::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #000;
+  top: 50%;
+  left: 50px;
+  right: 50px;
+  transform: translatey(-50%);
+  background-color: transparent;
+}
+#login .login_content .bd span {
+  font-size: 1.6rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+
+  padding: 0 10px;
+}
+#login .login_content .login_Icon {
+  margin-top: 15px;
+}
+#login .login_content .login_Icon i {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+#login .login_content .login_Icon .login_F {
+  color: #3a5497;
+}
+#login .login_content .login_Icon .login_G {
+  background: linear-gradient(to right, #ea4335, #fbbc05, #34a853, #4285f4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#login .login_content .login_Icon i + i {
+  margin-left: 15px;
+}
+#login .login-bg .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+#login .login-bg .close i {
+  font-size: 2.6rem;
+  opacity: 0.7;
+}
+#login .login-bg .close i:hover {
+  color: red;
+}
+#login .login_content .form .form_field.error input {
+  border-color: red;
+}
+#login .login_content .form .form_field.error small {
+  color: red;
+}
+#login .login_content .form .showmassage span {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: red;
+}

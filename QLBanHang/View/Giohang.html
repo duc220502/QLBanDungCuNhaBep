@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/giohang.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="logo">
+                <img  src="./assets/img/Kitchen_Shop-removebg-preview.png" alt="logo">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="./Trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav_categotry">
+                        <a href="./Cuahang1.html">CỬA HÀNG <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header_right">
+                <div class="cart">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span>10</span>
+                </div>
+                <div class="user">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li id="user-icon">
+                            <i class="fa-solid fa-user" ></i>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="section_content_GH">
+           <div class="content1">
+                <p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Giỏ hàng</span>
+                </p>
+           </div>
+           <div class="content2">
+                
+           </div>
+           <div class="payment">
+               <div class="inforToTalPrice">
+              
+              </div>
+              <button>Mua hàng</button>
+           </div>
+        </div>
+        
+        <div id="form_SignUp" class=""></div>
+        <div class="hoadon hide">
+            <div class="hd_content">
+                <p>Hóa Đơn</p>
+                <ul>
+                    <li><span>Tên khách hàng : </span><span class="namekh"></span></li>
+                    <li class="sdt">
+                        <span>SDT : </span>
+                        <div><input type="checkbox" name="sdt" id="sdt"> <span class="phonedefault">SDT Mặc định (02323873443)</span></div>
+                        <input type="text" >
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span>Address</span>
+                            <div class="select">
+                                <select id="tinh" name="cars">
+                                    <option value="0">Nhập tỉnh thành</option>
+                                </select>
+                                <select id="huyen" name="cars">
+                                    <option value="0">Nhập huyện</option>
+                                </select>
+                                <select id="xa" name="cars">
+                                    <option value="0">Nhập xã</option>
+                                </select>
+                                
+                            </div>
+                            <span>Số nhà cụ thể : </span><input type="text">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <span>Ngày đặt:</span>
+                        <span class="timenow">20/10/2023</span>
+                    </li>
+                    <li>
+                       <div class="table">
+                        
+                       </div>
+                    </li>
+                    <li>
+                        <span>TỔNG TIỀN:    </span>
+                        <span class="totalPrice">67000000</span>
+                    </li>   
+                    <li class="submit_TT"><button>Xác nhận thanh toán</button></li>
+                    
+                </ul>
+                <span class="icon_closeHd"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <div id="footer">
+            
+        </div>  
+        
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <!-- <script type="module" src="./assets/js/configlibary.js"></script> -->
+    <script type="module" src="./assets/js/header.js"></script>
+    <script type="module" src="./assets/js/giohang.js"></script>
+
+</body>
+</html>

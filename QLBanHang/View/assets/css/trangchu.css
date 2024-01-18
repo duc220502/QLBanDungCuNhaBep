@@ -1,0 +1,105 @@
+#container {
+  position: relative;
+}
+#Slider {
+  margin-top: 130px;
+}
+
+#Slider .swiper-slide img {
+  width: 100%;
+}
+#Slider .swiper-button-prev::after,
+#Slider .swiper-button-next::after {
+  font-size: 2.5rem;
+}
+#section_content .content1 {
+  padding: 30px 180px;
+}
+#section_content .content1 .items .img {
+  width: 550px;
+  height: 307px;
+  background-color: #f1f1f1;
+  border-radius: 8px !important;
+}
+#section_content .content1 .items .img img {
+  border-radius: 8px !important;
+  object-fit: cover;
+  overflow: hidden;
+  transition: filter 0.6s, opacity 0.6s, transform 0.6s, box-shadow 0.3s;
+}
+#section_content .content1 .items .img img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#section_content .content1 .items {
+  display: flex;
+  justify-content: space-between;
+}
+#section_content .content1 .items + .items {
+  margin-top: 30px;
+}
+
+.content1 .items img {
+  width: 100%;
+}
+#section_content .content2 {
+  padding: 30px 180px;
+  margin-top: 30px;
+}
+#section_content .content2 h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.content2 .nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}
+.content2 .nav li {
+  font-size: 2rem;
+  font-weight: 500;
+  opacity: 0.5;
+  padding: 0 20px;
+  transition: all 0.2s linear;
+}
+.content2 .nav li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.content2 .items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.content2 .items > div {
+  width: 260px;
+  border: 0.5px solid #cccccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.content2 .items .img {
+  width: 100%;
+  height: 260px;
+}
+.content2 .items .img img {
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.content2 .items p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.content2 .items .name {
+  opacity: 0.7;
+}
+.content2 .items .price {
+  color: red;
+}
+.content2 .items .img img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}

@@ -1,0 +1,90 @@
+#section_content .content1 {
+  width: 500px;
+  padding: 30px 25px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+#section_content {
+  margin: 50px auto;
+  padding: 100px;
+  max-width: 600px;
+}
+
+.content1 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#section_content .form {
+  margin-top: 15px;
+}
+#section_content .form li {
+  text-align: center;
+}
+#section_content .form li + li {
+  margin-top: 15px;
+}
+#section_content .form .form_field {
+  position: relative;
+}
+#section_content .form .form_field p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+#section_content .form .submit {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#section_content .form .form_lable {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 86px;
+  font-size: 1.5rem;
+  user-select: none;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+#section_content .form .form_field.error input {
+  border-color: red;
+}
+#section_content .form .form_field.error select.slerror {
+  border-color: red;
+}
+#section_content .form .form_field.error small {
+  color: red;
+}
+#section_content .form li input {
+  padding-left: 10px;
+  font-size: 1.6rem;
+  width: 70%;
+  height: 45px;
+  border-radius: 10px;
+  outline: none;
+  border: 0.5px solid #ccc;
+}
+#section_content .form li input:focus {
+  border-color: #6a5af9;
+}
+#section_content .form li input:not(:placeholder-shown) + .form_lable,
+#section_content .form li input:focus + .form_lable {
+  top: 0;
+  padding: 0 2px;
+  font-size: 1.3rem;
+  color: #6a5af9;
+  background-color: #ffffff;
+}
+#section_content .form li input::placeholder {
+  font-size: 1.6rem;
+  padding: 10px;
+}
+#section_content .form .showStatus {
+  width: 70%;
+  margin-top: 2px;
+  text-align: left;
+  padding-left: 80px;
+}
